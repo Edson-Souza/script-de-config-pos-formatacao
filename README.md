@@ -29,3 +29,11 @@ docker run --rm -it -v $PWD:/home/edson/teste dts:12b2 bash
 ## Tecnologias usadas
  * ShellScript Bash;
  * Docker.
+
+## Pretenções
+ * Configurações do Xfce;
+ * Configurações do Transmission;
+ * Configurações do VsCode;
+ * Mega;
+ * Wine;
+ * Oracle VM.
