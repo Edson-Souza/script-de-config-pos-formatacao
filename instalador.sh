@@ -17,7 +17,6 @@ APPS_INSTALADOS="${APPS_INSTALADOS}\n - Git;"
 
 # DOCKER
 # Add GPG key oficial Docker
-sudo apt update
 sudo apt install ca-certificates curl gnupg -y
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
