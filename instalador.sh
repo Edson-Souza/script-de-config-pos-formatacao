@@ -79,9 +79,9 @@ APPS_INSTALADOS="${APPS_INSTALADOS}\n - Spotify;"
 wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 sudo apt install -y dotnet-sdk-7.0
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 #sudo apt install -y aspnetcore-runtime-7.0
 sudo apt install -y dotnet-runtime-7.0
 APPS_INSTALADOS="${APPS_INSTALADOS}\n - DotNet Core.\n"
