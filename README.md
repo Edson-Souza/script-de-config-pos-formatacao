@@ -19,11 +19,11 @@ Isolamento de processos usando container Docker do Debian 12.
 ### Comandos Docker
 Comando usado pra criar a imagem do container com base no arquivo Dockerfile.
 ```
-docker build . -t dts:12b2
+docker build . -t dts:12b3
 ```
 Subindo container usando imagem 'dts' criada acima.
 ```
-docker run --rm -it -v $PWD:/home/edson/teste dts:12b2 bash
+docker run --rm -it -v $PWD:/home/edson/teste dts:12b3 bash
 ```
 
 ## Tecnologias usadas
