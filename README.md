@@ -11,10 +11,11 @@ Configurar um ambiente de desenvolvimento e uso pessoal usando automação de pr
  * Google Chrome;
  * Gimp;
  * Spotify;
- * DotNet Core.
+ * DotNet Core;
+ * Transmission.
 
 ## Método de teste usados
-Isolamento de processos usando container Docker do Debian 12.
+Isolamento de processos usando container Docker no Debian 12.
 
 ### Comandos Docker
 Comando usado pra criar a imagem do container com base no arquivo Dockerfile.

@@ -11,9 +11,12 @@ source $BASHRC_FILE
 APPS_INSTALADOS="${APPS_INSTALADOS}\n - Aliases;"
 
 # GIT
-sudo apt install git -y
+# TRANSMISSION pra baixar torrent
+# GIMP Editor de imagem
+sudo apt install git transmission gimp -y
 sudo apt update && sudo apt upgrade -y
-APPS_INSTALADOS="${APPS_INSTALADOS}\n - Git;"
+APPS_INSTALADOS="${APPS_INSTALADOS}\n - Git;\n - Transmission;\n - Gimp;"
+echo -e "\n\n\n\n\n\n\n\n\n\n"
 
 # DOCKER
 # Add GPG key oficial Docker
@@ -32,6 +35,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo usermod -aG docker $USER
 sudo apt update && sudo apt upgrade -y
 APPS_INSTALADOS="${APPS_INSTALADOS}\n - Docker;"
+echo -e "\n\n\n\n\n\n\n\n\n\n"
 
 # VSCODE
 # Instalar chave do repositorio apt sources
@@ -46,6 +50,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install code -y # or code-insiders
 sudo apt update && sudo apt upgrade -y
 APPS_INSTALADOS="${APPS_INSTALADOS}\n - VsCode;"
+echo -e "\n\n\n\n\n\n\n\n\n\n"
 
 # STEAM
 wget https://repo.steampowered.com/steam/archive/precise/steam_latest.deb
@@ -53,11 +58,7 @@ sudo apt --fix-broken install ./steam_latest.deb -y
 sudo rm steam_latest.deb
 sudo apt update && sudo apt upgrade -y
 APPS_INSTALADOS="${APPS_INSTALADOS}\n - Steam;"
-
-# GIMP
-sudo apt install gimp -y
-sudo apt update && sudo apt upgrade -y
-APPS_INSTALADOS="${APPS_INSTALADOS}\n - Gimp;"
+echo -e "\n\n\n\n\n\n\n\n\n\n"
 
 # GOOGLE CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -65,6 +66,7 @@ sudo apt --fix-broken install ./google-chrome-stable_current_amd64.deb -y
 sudo apt update && sudo apt upgrade -y
 sudo rm google-chrome-stable_current_amd64.deb
 APPS_INSTALADOS="${APPS_INSTALADOS}\n - Google Chrome;"
+echo -e "\n\n\n\n\n\n\n\n\n\n"
 
 # SPOTIFY LINK: https://www.spotify.com/br-pt/download/linux/
 # Configure our debian repository
@@ -74,6 +76,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install spotify-client -y
 sudo apt update && sudo apt upgrade -y
 APPS_INSTALADOS="${APPS_INSTALADOS}\n - Spotify;"
+echo -e "\n\n\n\n\n\n\n\n\n\n"
 
 # DOTNET CORE LINK: https://learn.microsoft.com/pt-br/dotnet/core/install/linux-debian
 wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -85,6 +88,7 @@ sudo apt update && sudo apt upgrade -y
 #sudo apt install -y aspnetcore-runtime-7.0
 sudo apt install -y dotnet-runtime-7.0
 APPS_INSTALADOS="${APPS_INSTALADOS}\n - DotNet Core.\n"
+echo -e "\n\n\n\n\n\n\n\n\n\n"
 
 echo -e "Apps instalados:\n"
 echo -e $APPS_INSTALADOS
